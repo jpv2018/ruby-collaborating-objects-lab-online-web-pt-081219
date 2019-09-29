@@ -29,10 +29,12 @@ class Artist
     Artist.new(name)
   end
     
-  def find_or_create_by_name(name)
-      if self.find(name)
+  def self.find_or_create_by_name(name)
+    if self.find(name)
         self.name
-      else self.create(name)
+    else self.create(name)
     end
   end
+  def print_songs
+    self.songs
 end
