@@ -35,6 +35,7 @@ class Artist
     else self.create(name)
     end
   end
+  
   def print_songs
     self.songs.each {|song| print song}
   end
